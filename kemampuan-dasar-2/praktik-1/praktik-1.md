@@ -1,6 +1,6 @@
 ﻿Mengecek sedang berada di direktori mana
 
-![](C:\Users\acer\Downloads\praktik-1\Aspose.Words.35a6a73e-548f-461b-b98a-c234cbc18d0b.001.png)
+![](Aspose.Words.35a6a73e-548f-461b-b98a-c234cbc18d0b.001.png)
 
 Masuk ke direktori Repo-1 yang berada di desktop 
 
