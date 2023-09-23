@@ -1,0 +1,427 @@
+== 1) Membuat folder di data D
+
+C:\Users\acer>md D:praxis-academy\kemampuan-dasar-1\latihan
+C:\Users\acer>D:
+--------------------------------------------------------------------------------------------------------
+
+== 2) Berpindah dari satu direktori ke direktori lainnya
+
+D:\>cd praxis-academy 
+D:\praxis-academy>
+--------------------------------------------------------------------------------------------------------
+
+== 3) Membuat suatu file 
+
+D:\praxis-academy>copy con marikitacoba.txt
+hallo, perkenalkan nama saya margareta navi. Salam kenal ya..^Z
+        1 file(s) copied.
+--------------------------------------------------------------------------------------------------------
+
+== 4) Copy file kedalam folder lain 
+
+D:\praxis-academy\kemampuan-dasar-1>copy D:\praxis-academy\marikitacoba.txt
+        1 file(s) copied.
+--------------------------------------------------------------------------------------------------------
+
+== 5) Menghapus file 
+
+D:\praxis-academy\kemampuan-dasar-1>del marikitacoba.txt
+
+D:\praxis-academy\kemampuan-dasar-1>dir
+ Volume in drive D is DATA
+ Volume Serial Number is 4C0E-48E1
+
+ Directory of D:\praxis-academy\kemampuan-dasar-1
+
+22/09/2023  21:30    <DIR>          .
+22/09/2023  21:10    <DIR>          ..
+22/09/2023  20:42    <DIR>          latihan
+               0 File(s)              0 bytes
+               3 Dir(s)  49.509.982.208 bytes free
+--------------------------------------------------------------------------------------------------------
+
+== 6) Menghapus Folder
+D:\>rd folder_1
+--------------------------------------------------------------------------------------------------------
+
+== 7) Menampilkan tanggal
+D:\>date/t
+22/09/2023
+--------------------------------------------------------------------------------------------------------
+
+== 8) Menampilkan waktu
+
+D:\>echo %time%
+21:37:27,11
+--------------------------------------------------------------------------------------------------------
+
+== 9) Mencari rangkaian teks dalam satu file atau beberapa file 
+
+D:\>find "finding-the-predecessor-and-successor-node" SDNL.txt
+
+---------- SDNL.TXT
+https://helloacm.com/finding-the-predecessor-and-successor-node-of-a-binary-search-tree/
+--------------------------------------------------------------------------------------------------------
+
+== 10) Mencari lokasi (path) dari file eksekusi (biasanya program atau perintah) dalam daftar direktori yang ada dalam variabel PATH.
+
+D:\>where python.exe
+C:\Users\acer\anaconda3\python.exe
+C:\Users\acer\AppData\Local\Microsoft\WindowsApps\python.exe
+--------------------------------------------------------------------------------------------------------
+
+== 11) Menampilkan informasi tentang sebuah komputer.
+
+Host Name:                 LAPTOP-8E71IUPR
+OS Name:                   Microsoft Windows 11 Home Single Language
+OS Version:                10.0.22000 N/A Build 22000
+OS Manufacturer:           Microsoft Corporation
+OS Configuration:          Standalone Workstation
+OS Build Type:             Multiprocessor Free
+Registered Owner:          acer
+Registered Organization:   N/A
+Product ID:                00327-35161-86609-AAOEM
+Original Install Date:     02/02/2022, 18:12:29
+System Boot Time:          22/09/2023, 16:53:19
+System Manufacturer:       Acer
+System Model:              Swift SF314-41
+System Type:               x64-based PC
+Processor(s):              1 Processor(s) Installed.
+                           [01]: AMD64 Family 23 Model 24 Stepping 1 AuthenticAMD ~2400 Mhz
+BIOS Version:              Insyde Corp. V1.02, 18/06/2019
+Windows Directory:         C:\WINDOWS
+System Directory:          C:\WINDOWS\system32
+Boot Device:               \Device\HarddiskVolume1
+System Locale:             en-us;English (United States)
+Input Locale:              en-us;English (United States)
+Time Zone:                 (UTC+07:00) Bangkok, Hanoi, Jakarta
+Total Physical Memory:     6.075 MB
+Available Physical Memory: 918 MB
+Virtual Memory: Max Size:  13.243 MB
+Virtual Memory: Available: 2.097 MB
+Virtual Memory: In Use:    11.146 MB
+Page File Location(s):     D:\pagefile.sys
+Domain:                    WORKGROUP
+Logon Server:              \\LAPTOP-8E71IUPR
+Hotfix(s):                 5 Hotfix(s) Installed.
+                           [01]: KB5029926
+                           [02]: KB5007575
+                           [03]: KB5012170
+                           [04]: KB5029253
+                           [05]: KB5028381
+Network Card(s):           1 NIC(s) Installed.
+                           [01]: Qualcomm Atheros QCA61x4A Wireless Network Adapter
+                                 Connection Name: Wi-Fi
+                                 DHCP Enabled:    Yes
+                                 DHCP Server:     192.168.1.1
+                                 IP address(es)
+                                 [01]: 192.168.1.13
+                                 [02]: fe80::da83:c8b7:a67f:b96b
+Hyper-V Requirements:      VM Monitor Mode Extensions: Yes
+                           Virtualization Enabled In Firmware: Yes
+                           Second Level Address Translation: Yes
+                           Data Execution Prevention Available: Yes
+--------------------------------------------------------------------------------------------------------
+
+== 12) mengganti nama file atau direktori (folder)
+
+D:\>rename "New Folder" "file saya"
+--------------------------------------------------------------------------------------------------------
+
+== 13) Mengubah warna latar depan dan latar belakang dalam jendela Command Prompt
+
+D:\>color 2
+--------------------------------------------------------------------------------------------------------
+
+== 14)  Menampilkan semua nilai konfigurasi jaringan TCP/IP saat ini dan memperbarui pengaturan Dynamic Host Configuration Protocol (DHCP) dan Domain Name System (DNS).
+
+D:\>ipconfig
+
+Windows IP Configuration
+
+
+Wireless LAN adapter Local Area Connection* 4:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Wi-Fi:
+
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::da83:c8b7:a67f:b96b%3
+   IPv4 Address. . . . . . . . . . . : 192.168.1.13
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 192.168.1.1
+--------------------------------------------------------------------------------------------------------
+
+== 15) menampilkan nama dari pengguna yang ada dalam komputer yang tersedia dan komputer yang sedang digunakan saat ini.
+
+C:\Users\acer>whoami
+laptop-8e71iupr\acer
+--------------------------------------------------------------------------------------------------------
+
+== 16) Untuk menampilkan informasi detail tentang semua proses yang sedang berjalan saat ini
+
+C:\Users\acer>tasklist /v /fi "STATUS eq running"
+
+Image Name                     PID Session Name        Session#    Mem Usage Status          User Name                                              CPU Time Window Title
+========================= ======== ================ =========== ============ =============== ================================================== ============ ========================================================================
+csrss.exe                      800 Console                    1      5.976 K Running         N/A                                                     0:00:11 N/A
+dwm.exe                       1300 Console                    1     71.068 K Running         N/A                                                     0:25:12 DWM Notification Window
+atieclxx.exe                  2388 Console                    1     10.604 K Running         N/A                                                     0:00:38 AMD EEU Client
+sihost.exe                    5368 Console                    1     35.748 K Running         LAPTOP-8E71IUPR\acer                                    0:00:12 N/A
+svchost.exe                   3816 Console                    1     36.832 K Running         LAPTOP-8E71IUPR\acer                                    0:00:03 Windows Push Notifications Platform
+taskhostw.exe                 4020 Console                    1     18.956 K Running         LAPTOP-8E71IUPR\acer                                    0:00:01 Task Host Window
+ctfmon.exe                    8484 Console                    1     21.160 K Running         LAPTOP-8E71IUPR\acer                                    0:00:16 N/A
+explorer.exe                  8688 Console                    1    170.884 K Running         LAPTOP-8E71IUPR\acer                                    0:03:19 N/A
+svchost.exe                   9044 Console                    1     36.872 K Running         LAPTOP-8E71IUPR\acer                                    0:00:04 OLEChannelWnd
+Widgets.exe                   1652 Console                    1     39.480 K Running         LAPTOP-8E71IUPR\acer                                    0:00:08 N/A
+SearchHost.exe                2984 Console                    1     83.124 K Running         LAPTOP-8E71IUPR\acer                                    0:00:53 Search
+StartMenuExperienceHost.e     9240 Console                    1     60.568 K Running         LAPTOP-8E71IUPR\acer                                    0:00:05 Start
+RuntimeBroker.exe             9344 Console                    1     25.716 K Running         LAPTOP-8E71IUPR\acer                                    0:00:01 OleMainThreadWndName
+RuntimeBroker.exe             9400 Console                    1     49.428 K Running         LAPTOP-8E71IUPR\acer                                    0:00:09 N/A
+dllhost.exe                   9996 Console                    1     16.464 K Running         LAPTOP-8E71IUPR\acer                                    0:00:01 OleMainThreadWndName
+TextInputHost.exe            11084 Console                    1     76.044 K Running         LAPTOP-8E71IUPR\acer                                    0:00:11 Windows Input Experience
+ShellExperienceHost.exe       3824 Console                    1     15.736 K Running         LAPTOP-8E71IUPR\acer                                    0:00:03 Control Center
+RuntimeBroker.exe            10704 Console                    1      8.408 K Running         LAPTOP-8E71IUPR\acer                                    0:00:01 N/A
+SystemSettingsBroker.exe     10764 Console                    1     10.800 K Running         LAPTOP-8E71IUPR\acer                                    0:00:01 N/A
+WidgetService.exe             8396 Console                    1     14.280 K Running         LAPTOP-8E71IUPR\acer                                    0:00:00 OLEChannelWnd
+SecurityHealthSystray.exe    10480 Console                    1      9.496 K Running         LAPTOP-8E71IUPR\acer                                    0:00:00 N/A
+RadeonSoftware.exe            3056 Console                    1     29.600 K Running         LAPTOP-8E71IUPR\acer                                    0:00:16 Radeon Software
+msteams.exe                  11820 Console                    1     15.988 K Running         LAPTOP-8E71IUPR\acer                                    0:00:03 N/A
+ONENOTEM.EXE                 11908 Console                    1      2.000 K Running         LAPTOP-8E71IUPR\acer                                    0:00:00 Microsoft OneNote 2016 - Windows taskbar
+msedgewebview2.exe           12084 Console                    1     33.368 K Running         LAPTOP-8E71IUPR\acer                                    0:00:06 N/A
+msedgewebview2.exe           12136 Console                    1      7.380 K Running         LAPTOP-8E71IUPR\acer                                    0:00:00 N/A
+msedgewebview2.exe           11644 Console                    1      7.584 K Running         LAPTOP-8E71IUPR\acer                                    0:00:00 N/A
+AMDRSServ.exe                12368 Console                    1      5.356 K Running         LAPTOP-8E71IUPR\acer                                    0:00:00 GDI+ Window (AMDRSServ.exe)
+AVGUI.exe                    12528 Console                    1     60.896 K Running         LAPTOP-8E71IUPR\acer                                    0:03:32 N/A
+QAAgent.exe                  12952 Console                    1      9.264 K Running         LAPTOP-8E71IUPR\acer                                    0:00:00 N/A
+QAAdminAgent.exe             13092 Console                    1     19.100 K Running         N/A                                                     0:00:35 QAAdminAgent
+unsecapp.exe                 13140 Console                    1      9.640 K Running         N/A                                                     0:00:00 OleMainThreadWndName
+SystemSettings.exe           12360 Console                    1      2.412 K Running         LAPTOP-8E71IUPR\acer                                    0:00:04 Settings
+ApplicationFrameHost.exe     11672 Console                    1     10.872 K Running         LAPTOP-8E71IUPR\acer                                    0:00:00 Settings
+chrome.exe                   14132 Console                    1    312.460 K Running         LAPTOP-8E71IUPR\acer                                    0:29:14 tasklist | Microsoft Learn - Google Chrome
+chrome.exe                   14192 Console                    1      8.728 K Running         LAPTOP-8E71IUPR\acer                                    0:00:00 N/A
+chrome.exe                   13428 Console                    1    170.860 K Running         LAPTOP-8E71IUPR\acer                                    0:23:58 N/A
+GameBar.exe                  14876 Console                    1     12.804 K Running         LAPTOP-8E71IUPR\acer                                    0:00:02 Xbox Game Bar
+GameBarFTServer.exe          14988 Console                    1     14.768 K Running         LAPTOP-8E71IUPR\acer                                    0:00:00 OleMainThreadWndName
+cmd.exe                      14032 Console                    1      3.976 K Running         LAPTOP-8E71IUPR\acer                                    0:00:00 C:\WINDOWS\system32\cmd.exe
+HostAppServiceUpdater.exe    14056 Console                    1      2.724 K Running         LAPTOP-8E71IUPR\acer                                    0:00:00 N/A
+QAWiFiPowerSwitch.exe         6636 Console                    1      2.232 K Running         LAPTOP-8E71IUPR\acer                                    0:00:00 QAWiFiPowerSwitch
+ACCStd.exe                   10372 Console                    1      7.564 K Running         LAPTOP-8E71IUPR\acer                                    0:00:06 .NET-BroadcastEventWindow.4.0.0.0.32b795f.0
+ePowerButton_NB.exe           6528 Console                    1      4.396 K Running         LAPTOP-8E71IUPR\acer                                    0:00:01 Hidden Window
+unsecapp.exe                 11552 Console                    1      9.616 K Running         LAPTOP-8E71IUPR\acer                                    0:00:00 OleMainThreadWndName
+AppMonitorPlugIn.exe         12060 Console                    1     17.512 K Running         LAPTOP-8E71IUPR\acer                                    0:01:06 AppMonitorPlugIn
+msedgewebview2.exe           16244 Console                    1      2.276 K Running         LAPTOP-8E71IUPR\acer                                    0:00:09 N/A
+msedgewebview2.exe           10528 Console                    1      7.312 K Running         LAPTOP-8E71IUPR\acer                                    0:00:00 N/A
+msedgewebview2.exe            2500 Console                    1        664 K Running         LAPTOP-8E71IUPR\acer                                    0:00:13 N/A
+LiveUpdateChecker.exe        10288 Console                    1      4.424 K Running         LAPTOP-8E71IUPR\acer                                    0:00:00 SystemResourceNotifyWindow
+dllhost.exe                   1560 Console                    1     11.292 K Running         LAPTOP-8E71IUPR\acer                                    0:00:00 OleMainThreadWndName
+WINWORD.EXE                  15216 Console                    1    115.012 K Running         LAPTOP-8E71IUPR\acer                                    0:01:38 Document1 - Word
+svchost.exe                  13848 Console                    1     14.168 K Running         LAPTOP-8E71IUPR\acer                                    0:00:00 N/A
+AcroRd32.exe                 15736 Console                    1     19.988 K Running         LAPTOP-8E71IUPR\acer                                    0:00:04 N/A
+AcroRd32.exe                 11484 Console                    1     66.180 K Running         LAPTOP-8E71IUPR\acer                                    0:00:25 laporan 12_daskom_CLI_195314009.pdf - Adobe Reader
+AdobeARM.exe                 10956 Console                    1     22.876 K Running         LAPTOP-8E71IUPR\acer                                    0:00:00 Adobe Reader Updater
+MendeleyWordPlugin.exe       15328 Console                    1     17.764 K Running         LAPTOP-8E71IUPR\acer                                    0:00:03 DDE Server Window
+SearchHost.exe               13084 Console                    1    100.992 K Running         LAPTOP-8E71IUPR\acer                                    0:00:04 N/A
+Notepad.exe                  14048 Console                    1     70.772 K Running         LAPTOP-8E71IUPR\acer                                    0:00:23 *== 1) Membuat folder di data D - Notepad
+dllhost.exe                  17036 Console                    1     13.016 K Running         LAPTOP-8E71IUPR\acer                                    0:00:00 OleMainThreadWndName
+cmd.exe                       8468 Console                    1      5.324 K Running         LAPTOP-8E71IUPR\acer                                    0:00:00 Command Prompt - tasklist  /v /fi "STATUS eq running"
+conhost.exe                  14480 Console                    1     19.836 K Running         LAPTOP-8E71IUPR\acer                                    0:00:01 N/A
+--------------------------------------------------------------------------------------------------------
+
+== 17) melihat daftar file dan sub-direktori yang ada di dalam sebuah direktori
+
+D:\>dir jurnal
+ Volume in drive D is DATA
+ Volume Serial Number is 4C0E-48E1
+
+ Directory of D:\jurnal
+
+09/08/2022  15:34    <DIR>          .
+16/02/2022  11:44           779.888 02-EKO-WIJAYA.pdf
+10/05/2022  22:26           279.322 10197-29920-1-PB.pdf
+01/03/2022  15:05           208.634 1030-2425-1-SM.pdf
+13/06/2022  17:45           366.326 1255-3364-1-PB.pdf
+30/05/2022  19:07           528.745 130-File Utama Naskah-1141-3-10-20200214.pdf
+23/03/2022  12:11           324.754 13626-30869-1-PB.pdf
+13/06/2022  17:48         2.106.991 145314097_full.pdf
+11/06/2022  21:02           590.398 16001-39633-1-PB.pdf
+24/03/2022  20:28           565.995 176-690-1-PB.pdf
+22/03/2022  19:53           280.818 20.04.272_jurnal_eproc (1).pdf
+24/03/2022  22:39           280.818 20.04.272_jurnal_eproc (2).pdf
+22/03/2022  19:44           280.818 20.04.272_jurnal_eproc.pdf
+23/05/2022  01:52           500.123 200-Article Text-862-1-10-20210831.pdf
+07/05/2022  17:02           783.874 2081-7357-1-PB.pdf
+13/06/2022  16:31         6.180.682 209-Article Text-316-1-10-20191001.pdf
+22/03/2022  15:09           456.041 2231-Article Text-4558-1-10-20191206.pdf
+26/05/2022  20:30           812.617 26577-Article Text-30983-1-10-20190114.pdf
+19/05/2022  18:33           510.330 3403-1-22208-1-10-20180730.pdf
+18/05/2022  19:24           478.667 36776-75676624303-2-PB.pdf
+26/02/2022  16:45           533.703 39770-697-80321-1-10-20180521 (1).pdf
+26/02/2022  13:46           533.703 39770-697-80321-1-10-20180521.pdf
+08/05/2022  18:24           179.431 40021-75676622269-1-PB.pdf
+18/05/2022  20:15           413.531 4009-Article Text-15282-1-10-20211015.pdf
+05/04/2022  15:25           242.117 43008-112362-2-PB.pdf
+14/03/2022  17:11         1.338.048 4460-10364-2-PB.pdf
+28/06/2022  11:09           463.317 45-2022-STKP_m195314009.pdf
+14/03/2022  17:05            95.987 4521-14775-1-SM.pdf
+28/06/2022  11:09           463.280 46-2022-STKP_m195314010.pdf
+05/04/2022  15:26           168.351 4656-15618-1-PB.pdf
+06/05/2022  19:43           247.220 50-152-1-PB.pdf
+20/06/2022  22:27           630.990 64434-181-181586-1-10-20201124.pdf
+20/03/2022  17:04           903.090 65-145-1-SM.pdf
+14/03/2022  17:37           409.067 713-2225-1-SM.pdf
+24/05/2022  18:13         1.072.427 774-Article Text-2508-1-10-20210729 (1).pdf
+24/05/2022  17:59         1.072.427 774-Article Text-2508-1-10-20210729.pdf
+17/05/2022  21:35           717.781 78-Article Text-434-2-10-20210531.pdf
+07/05/2022  17:01         1.022.066 8148-23608-1-PB.pdf
+22/03/2022  20:06           792.470 92-166-1-SM.pdf
+22/03/2022  19:55           461.009 9647-30948-1-PB.pdf
+              39 File(s)     28.075.856 bytes
+               1 Dir(s)  49.509.953.536 bytes free
+
+--------------------------------------------------------------------------------------------------------
+
+== 18) menampilkan fungsi-fungsi apa saja yang bisa dipakai.
+C:\Users\acer>help
+For more information on a specific command, type HELP command-name
+ASSOC          Displays or modifies file extension associations.
+ATTRIB         Displays or changes file attributes.
+BREAK          Sets or clears extended CTRL+C checking.
+BCDEDIT        Sets properties in boot database to control boot loading.
+CACLS          Displays or modifies access control lists (ACLs) of files.
+CALL           Calls one batch program from another.
+CD             Displays the name of or changes the current directory.
+CHCP           Displays or sets the active code page number.
+CHDIR          Displays the name of or changes the current directory.
+CHKDSK         Checks a disk and displays a status report.
+CHKNTFS        Displays or modifies the checking of disk at boot time.
+CLS            Clears the screen.
+CMD            Starts a new instance of the Windows command interpreter.
+COLOR          Sets the default console foreground and background colors.
+COMP           Compares the contents of two files or sets of files.
+COMPACT        Displays or alters the compression of files on NTFS partitions.
+CONVERT        Converts FAT volumes to NTFS.  You cannot convert the
+               current drive.
+COPY           Copies one or more files to another location.
+DATE           Displays or sets the date.
+DEL            Deletes one or more files.
+DIR            Displays a list of files and subdirectories in a directory.
+DISKPART       Displays or configures Disk Partition properties.
+DOSKEY         Edits command lines, recalls Windows commands, and
+               creates macros.
+DRIVERQUERY    Displays current device driver status and properties.
+ECHO           Displays messages, or turns command echoing on or off.
+ENDLOCAL       Ends localization of environment changes in a batch file.
+ERASE          Deletes one or more files.
+EXIT           Quits the CMD.EXE program (command interpreter).
+FC             Compares two files or sets of files, and displays the
+               differences between them.
+FIND           Searches for a text string in a file or files.
+FINDSTR        Searches for strings in files.
+FOR            Runs a specified command for each file in a set of files.
+FORMAT         Formats a disk for use with Windows.
+FSUTIL         Displays or configures the file system properties.
+FTYPE          Displays or modifies file types used in file extension
+               associations.
+GOTO           Directs the Windows command interpreter to a labeled line in
+               a batch program.
+GPRESULT       Displays Group Policy information for machine or user.
+GRAFTABL       Enables Windows to display an extended character set in
+               graphics mode.
+HELP           Provides Help information for Windows commands.
+ICACLS         Display, modify, backup, or restore ACLs for files and
+               directories.
+IF             Performs conditional processing in batch programs.
+LABEL          Creates, changes, or deletes the volume label of a disk.
+MD             Creates a directory.
+MKDIR          Creates a directory.
+MKLINK         Creates Symbolic Links and Hard Links
+MODE           Configures a system device.
+MORE           Displays output one screen at a time.
+MOVE           Moves one or more files from one directory to another
+               directory.
+OPENFILES      Displays files opened by remote users for a file share.
+PATH           Displays or sets a search path for executable files.
+PAUSE          Suspends processing of a batch file and displays a message.
+POPD           Restores the previous value of the current directory saved by
+               PUSHD.
+PRINT          Prints a text file.
+PROMPT         Changes the Windows command prompt.
+PUSHD          Saves the current directory then changes it.
+RD             Removes a directory.
+RECOVER        Recovers readable information from a bad or defective disk.
+REM            Records comments (remarks) in batch files or CONFIG.SYS.
+REN            Renames a file or files.
+RENAME         Renames a file or files.
+REPLACE        Replaces files.
+RMDIR          Removes a directory.
+ROBOCOPY       Advanced utility to copy files and directory trees
+SET            Displays, sets, or removes Windows environment variables.
+SETLOCAL       Begins localization of environment changes in a batch file.
+SC             Displays or configures services (background processes).
+SCHTASKS       Schedules commands and programs to run on a computer.
+SHIFT          Shifts the position of replaceable parameters in batch files.
+SHUTDOWN       Allows proper local or remote shutdown of machine.
+SORT           Sorts input.
+START          Starts a separate window to run a specified program or command.
+SUBST          Associates a path with a drive letter.
+SYSTEMINFO     Displays machine specific properties and configuration.
+TASKLIST       Displays all currently running tasks including services.
+TASKKILL       Kill or stop a running process or application.
+TIME           Displays or sets the system time.
+TITLE          Sets the window title for a CMD.EXE session.
+TREE           Graphically displays the directory structure of a drive or
+               path.
+TYPE           Displays the contents of a text file.
+VER            Displays the Windows version.
+VERIFY         Tells Windows whether to verify that your files are written
+               correctly to a disk.
+VOL            Displays a disk volume label and serial number.
+XCOPY          Copies files and directory trees.
+WMIC           Displays WMI information inside interactive command shell.
+
+For more information on tools see the command-line reference in the online help.
+--------------------------------------------------------------------------------------------------------
+
+== 19) muncul semua daftar port yang saat itu terbuka dan alamat IP yang terkait.
+
+C:\Users\acer>netstat
+
+Active Connections
+
+  Proto  Local Address          Foreign Address        State
+  TCP    127.0.0.1:50549        LAPTOP-8E71IUPR:4843   SYN_SENT
+  TCP    192.168.1.13:49499     118.98.113.99:https    CLOSE_WAIT
+  TCP    192.168.1.13:49502     200:https              CLOSE_WAIT
+  TCP    192.168.1.13:49694     84:https               ESTABLISHED
+  TCP    192.168.1.13:50455     dns:https              ESTABLISHED
+  TCP    192.168.1.13:50483     176:http               TIME_WAIT
+  TCP    192.168.1.13:50520     118.98.93.64:https     ESTABLISHED
+  TCP    192.168.1.13:50540     156:https              CLOSE_WAIT
+  TCP    192.168.1.13:50541     156:https              CLOSE_WAIT
+  TCP    192.168.1.13:50544     29:https               TIME_WAIT
+  TCP    192.168.1.13:50550     176:http               TIME_WAIT
+  TCP    192.168.1.13:56041     sg-in-f188:5228        ESTABLISHED
+  TCP    192.168.1.13:60042     182:https              ESTABLISHED
+  TCP    [::1]:1521             LAPTOP-8E71IUPR:49674  ESTABLISHED
+  TCP    [::1]:49674            LAPTOP-8E71IUPR:1521   ESTABLISHED
+--------------------------------------------------------------------------------------------------------
+
+== 20)memunculkan struktur pada suatu folder. 
+
+D:\praxis-academy>tree
+Folder PATH listing for volume DATA
+Volume serial number is 4C0E-48E1
+D:.
+├───kemampuan-dasar-1
+│   ├───kasus
+│   └───latihan
+│       └───powershellscript
+├───kemampuan-dasar-2
+└───wawasan
+
+--------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------
